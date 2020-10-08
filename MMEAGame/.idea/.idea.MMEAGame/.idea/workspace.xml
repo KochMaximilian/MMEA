@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -83,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602166275222</updated>
       <workItem from="1602166286927" duration="408000" />
-      <workItem from="1602167664246" duration="627000" />
+      <workItem from="1602167664246" duration="1742000" />
     </task>
     <servers />
   </component>

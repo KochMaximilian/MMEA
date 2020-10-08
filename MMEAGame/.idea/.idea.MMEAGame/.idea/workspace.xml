@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1ibBB9Rj6VGp3Ei4wadS78smhiW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,8 +46,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -72,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602166275222</updated>
-      <workItem from="1602166286927" duration="94000" />
+      <workItem from="1602166286927" duration="408000" />
+      <workItem from="1602167664246" duration="627000" />
     </task>
     <servers />
   </component>
@@ -91,6 +102,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -100,5 +112,9 @@
       <screen x="83" y="0" width="1883" height="1106" />
     </state>
     <state x="534" y="198" key="SettingsEditor/83.0.1883.1106@83.0.1883.1106" timestamp="1602166380408" />
+    <state x="176" y="93" width="1697" height="920" key="VCS.FileHistoryDialog" timestamp="1602167990502">
+      <screen x="83" y="0" width="1883" height="1106" />
+    </state>
+    <state x="176" y="93" width="1697" height="920" key="VCS.FileHistoryDialog/83.0.1883.1106@83.0.1883.1106" timestamp="1602167990502" />
   </component>
 </project>

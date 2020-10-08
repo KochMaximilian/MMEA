@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerSlippy.physicsMaterial2D" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PlayerSlippy.physicsMaterial2D.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602166275222</updated>
       <workItem from="1602166286927" duration="408000" />
-      <workItem from="1602167664246" duration="4424000" />
+      <workItem from="1602167664246" duration="9358000" />
     </task>
     <servers />
   </component>

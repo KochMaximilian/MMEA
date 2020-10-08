@@ -5,10 +5,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float jumpForce;
+    // Serialized Fields
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _jumpForce;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private LayerMask _groundLayerMask;
 
-    public Rigidbody2D Rigidbody;
+    // Basic Variables
+    public Rigidbody2D playerRigidbody;
+    private bool isOnGround;
+    
 
 
     // Start is called before the first frame update
@@ -26,12 +32,16 @@ public class PlayerController : MonoBehaviour
     private void PlayerMovement()
     {
         // MAX: Move left and right
-        Rigidbody.velocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), Rigidbody.velocity.y);
+        playerRigidbody.velocity = new Vector2(_moveSpeed * Input.GetAxis("Horizontal"), playerRigidbody.velocity.y);
         
         // MAX: Jump
+        isOnGround = Physics2D.OverlapCircle(_groundCheck.position, .2f, _groundLayerMask); // MAX: Check if there is a collision with any other objects (Circle Object)
         if (Input.GetButtonDown("Jump"))
         {
-            Rigidbody.velocity = new Vector2(Rigidbody.velocity.x, jumpForce);
+            if (isOnGround)
+            {
+                playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, _jumpForce);    
+            }
         }
     }
 }

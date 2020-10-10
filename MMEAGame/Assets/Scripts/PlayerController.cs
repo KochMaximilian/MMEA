@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
     private bool canDoubleJump;
 
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     
     
-
-
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -68,6 +68,16 @@ public class PlayerController : MonoBehaviour
     
     private void PlayerAnimation()
     {
+        // change animation form left to right (flip left = ture , flip right = false)
+        if(playerRigidbody.velocity.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (playerRigidbody.velocity.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
         animator.SetFloat("moveSpeed",Math.Abs(playerRigidbody.velocity.x));
         animator.SetBool("isOnGround", isOnGround);
     }

@@ -26,6 +26,10 @@
       <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player.controller.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Idle.anim" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Jump.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Jump.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Run.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Player/Player_Run.anim.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
     </list>
@@ -93,7 +97,7 @@
       <updated>1602166275222</updated>
       <workItem from="1602166286927" duration="408000" />
       <workItem from="1602167664246" duration="9799000" />
-      <workItem from="1602330866038" duration="382000" />
+      <workItem from="1602330866038" duration="1073000" />
     </task>
     <servers />
   </component>

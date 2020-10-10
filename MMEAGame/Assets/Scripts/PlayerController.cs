@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Packages.Rider.Editor;
 using UnityEngine;
@@ -15,7 +16,9 @@ public class PlayerController : MonoBehaviour
     // Basic Variables
     public Rigidbody2D playerRigidbody;
     private bool isOnGround;
-    private bool canDoubleJump; 
+    private bool canDoubleJump;
+
+    private Animator animator;
     
     
 
@@ -23,15 +26,17 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
+        PlayerAnimation();
     }
 
+    
     private void PlayerMovement()
     {
         // MAX: Move left and right
@@ -58,6 +63,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    
+    private void PlayerAnimation()
+    {
+        animator.SetFloat("moveSpeed",Math.Abs(playerRigidbody.velocity.x));
+        animator.SetBool("isOnGround", isOnGround);
     }
 }
 

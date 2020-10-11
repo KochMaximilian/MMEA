@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         ParallaxScroll();
-        CameraBoundary();
+       // CameraBoundary();
     }
 
     private void CameraBoundary()
@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour
         Vector2 amountToMove = new Vector2(transform.position.x - lastPosition.x, transform.position.y - lastPosition.y);
         
         backgroundFar.position += new Vector3(amountToMove.x, amountToMove.y, 0f);
-        backgroundMiddle.position += new Vector3(amountToMove.x * amountToMove.y, 0f, 0f) * _parallaxOffset;
+        backgroundMiddle.position += new Vector3(amountToMove.x , amountToMove.y, 0f) * _parallaxOffset;
         lastPosition = transform.position;
     }
 }

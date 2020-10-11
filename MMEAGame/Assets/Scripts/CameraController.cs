@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
-    public Transform target;
+    [SerializeField] private float _parallaxOffset = .5f;
     public Transform backgroundFar, backgroundMiddle;
+    private float lastXPosition;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        lastXPosition = transform.position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        // Parallax
+        var amoutToMoveX = transform.position.x - lastXPosition;
+        backgroundFar.position += new Vector3(amoutToMoveX, 0f, 0f);
+        backgroundMiddle.position += new Vector3(amoutToMoveX * _parallaxOffset, 0f, 0f);
+        lastXPosition = transform.position.x;
+        
     }
 }

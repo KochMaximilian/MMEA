@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99542105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1982584320}
@@ -182,7 +182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270509995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.69, y: 0.51, z: 0}
+  m_LocalPosition: {x: -2.69, y: 0.51, z: 9.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1142169511}
@@ -333,7 +333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.79471, y: -0.77, z: -5.5455446}
+  m_LocalPosition: {x: -24.79471, y: -0.751482, z: -5.5455446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 756505538}
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenY: 0.5018518
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
@@ -969,6 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652419462}
   - component: {fileID: 1652419463}
+  - component: {fileID: 1652419464}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -984,7 +985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652419461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.79471, y: -0.77, z: -5.5455446}
+  m_LocalPosition: {x: -24.79471, y: -0.751482, z: -5.5455446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1382826556}
@@ -1026,6 +1027,21 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1382826556}
+--- !u!114 &1652419464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652419461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa495e7a063a56479491100c6f93b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _parallaxOffset: 0.5
+  backgroundFar: {fileID: 270509996}
+  backgroundMiddle: {fileID: 99542106}
 --- !u!1 &1861275301
 GameObject:
   m_ObjectHideFlags: 0

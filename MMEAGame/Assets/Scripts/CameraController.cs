@@ -7,8 +7,6 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float _parallaxOffset = .5f;
-    [SerializeField] private float _minHeight, _maxHeight;
-    
     public Transform backgroundFar, backgroundMiddle;
     private Vector2 lastPosition;
     
@@ -22,17 +20,8 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         ParallaxScroll();
-       // CameraBoundary();
     }
-
-    private void CameraBoundary()
-    {
-        // Camera boundary, might change/delete later
-        float clampedY = Mathf.Clamp(transform.position.y, _minHeight, _maxHeight);
-        transform.position = new Vector3(transform.position.x, clampedY, transform.position.z);
-
-    }
-
+    
     private void ParallaxScroll()
     {
         // Parallax Horizontal

@@ -10,12 +10,12 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float _minHeight, _maxHeight;
     
     public Transform backgroundFar, backgroundMiddle;
-    private float lastXPosition;
+    private Vector2 lastPosition;
     
     // Start is called before the first frame update
     void Start()
     {
-        lastXPosition = transform.position.x;
+        lastPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -35,10 +35,11 @@ public class CameraController : MonoBehaviour
 
     private void ParallaxScroll()
     {
-        // Parallax
-        var amoutToMoveX = transform.position.x - lastXPosition;
-        backgroundFar.position += new Vector3(amoutToMoveX, 0f, 0f);
-        backgroundMiddle.position += new Vector3(amoutToMoveX * _parallaxOffset, 0f, 0f);
-        lastXPosition = transform.position.x;
+        // Parallax Horizontal
+        Vector2 amountToMove = new Vector2(transform.position.x - lastPosition.x, transform.position.y - lastPosition.y);
+        
+        backgroundFar.position += new Vector3(amountToMove.x, amountToMove.y, 0f);
+        backgroundMiddle.position += new Vector3(amountToMove.x * amountToMove.y, 0f, 0f) * _parallaxOffset;
+        lastPosition = transform.position;
     }
 }

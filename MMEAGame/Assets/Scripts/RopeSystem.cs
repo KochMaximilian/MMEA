@@ -4,16 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-
-/* MAX: Todo Grappling Hook
-- Create aiming system.
-- Use a line renderer and distance joint to create a rope.
-- Make the rope wrap around objects in your game.
-- Calculate an angle for swinging on a rope and add force in that direction.
-- Raycast
-
-*/
-
 public class RopeSystem : MonoBehaviour
 {
     // MAX: Aiming Rope
@@ -157,7 +147,7 @@ public class RopeSystem : MonoBehaviour
                 ropeRenderer.SetPosition(i, ropePositions[i]);
                 
                 // 4
-                if (i == ropePositions.Count - 1 || ropePositions.Count == 1)
+                if (i == ropePositions.Count - 1 || ropePositions.Count == 1) 
                 {
                     var ropePosition = ropePositions[ropePositions.Count - 1];
                     if (ropePositions.Count == 1)
@@ -210,9 +200,6 @@ public class RopeSystem : MonoBehaviour
         ropeHingeAnchorSprite.enabled = false;
     }
     
-    
-
-
     // Start is called before the first frame update
     void Start()
     {

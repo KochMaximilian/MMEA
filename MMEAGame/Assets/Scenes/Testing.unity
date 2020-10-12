@@ -1716,6 +1716,7 @@ GameObject:
   - component: {fileID: 2014305174}
   - component: {fileID: 2014305175}
   - component: {fileID: 2014305176}
+  - component: {fileID: 2014305177}
   m_Layer: 11
   m_Name: Player
   m_TagString: Untagged
@@ -2006,3 +2007,16 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &2014305177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014305167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bf44ead41d03e4194837b7db6e2110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loseHeight: -20

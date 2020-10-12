@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 
 /* MAX: Todo Grappling Hook
@@ -30,7 +31,8 @@ public class RopeSystem : MonoBehaviour
     public LineRenderer ropeRenderer;
     public LayerMask ropeLayerMask;
     private float ropeMaxCastDistance = 20f;
-    private List<Vector2> ropePosition = new List<Vector2>();
+    private List<Vector2> ropePositions = new List<Vector2>();
+    private bool distanceSet;
     
     // Max: Awake runs when the game starts and disables the rope joint and sets player position to current position 
     private void Awake()
@@ -69,6 +71,7 @@ public class RopeSystem : MonoBehaviour
         }
         
         HandleInput(aimDirection);
+        UpdateRopePosition();
     }
 
     // MAX: position crosshair based on the aimAngle
@@ -107,11 +110,11 @@ public class RopeSystem : MonoBehaviour
             if (hit.collider != null)
             {
                 ropeAttached = true;
-                if (!ropePosition.Contains(hit.point))
+                if (!ropePositions.Contains(hit.point))
                 {
                     // MAX: jump a little to the distance the player from the ground after grappling something
                     transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
-                    ropePosition.Add(hit.point);
+                    ropePositions.Add(hit.point);
                     ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
                     ropeJoint.enabled = true;
                     ropeHingeAnchorSprite.enabled = true;
@@ -134,6 +137,66 @@ public class RopeSystem : MonoBehaviour
         }
     }
 
+    private void UpdateRopePosition()
+    {
+        // 1
+        if (!ropeAttached)
+        {
+            return;
+        }
+        
+        // 2 
+        ropeRenderer.positionCount = ropePositions.Count + 1;
+        
+        // 3 
+
+        for (var i = ropeRenderer.positionCount -1; i >= 0; i--)
+        {
+            if (i != ropeRenderer.positionCount - 1) // if not the last point of line renderer
+            {
+                ropeRenderer.SetPosition(i, ropePositions[i]);
+                
+                // 4
+                if (i == ropePositions.Count - 1 || ropePositions.Count == 1)
+                {
+                    var ropePosition = ropePositions[ropePositions.Count - 1];
+                    if (ropePositions.Count == 1)
+                    {
+                        ropeHingeAnchorRb.transform.position = ropePosition;
+                        if (!distanceSet)
+                        {
+                            ropeJoint.distance = Vector2.Distance(transform.position, ropePosition);
+                            distanceSet = true;
+                        }
+                    }
+                    else
+                    {
+                        ropeHingeAnchorRb.transform.position = ropePosition;
+                        if (!distanceSet)
+                        {
+                            ropeJoint.distance = Vector2.Distance(transform.position, ropePosition);
+                            distanceSet = true;
+                        }
+                    }
+                } else if (i - 1 == ropePositions.IndexOf(ropePositions.Last()))
+                {
+                    var ropePosition = ropePositions.Last();
+                    ropeHingeAnchorRb.transform.position = ropePosition;
+                    if (!distanceSet)
+                    {
+                        ropeJoint.distance = Vector2.Distance(transform.position, ropePosition);
+                        distanceSet = true;
+                    }
+                }
+            }
+            else
+            {
+                // 6
+                ropeRenderer.SetPosition(i, transform.position);
+            }
+        }
+    }
+
     // MAX: If the right mouse button is clicked, the ResetRope() method is called, which will disable and reset all rope/grappling hook related parameters
     private void ResetRope()
     {
@@ -143,9 +206,8 @@ public class RopeSystem : MonoBehaviour
         ropeRenderer.positionCount = 2;
         ropeRenderer.SetPosition(0, transform.position);
         ropeRenderer.SetPosition(1, transform.position);
-        ropePosition.Clear();
+        ropePositions.Clear();
         ropeHingeAnchorSprite.enabled = false;
-
     }
     
     

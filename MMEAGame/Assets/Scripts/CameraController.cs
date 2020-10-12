@@ -24,7 +24,7 @@ public class CameraController : MonoBehaviour
     
     private void ParallaxScroll()
     {
-        // Parallax Horizontal
+        // Parallax
         Vector2 amountToMove = new Vector2(transform.position.x - lastPosition.x, transform.position.y - lastPosition.y);
         
         backgroundFar.position += new Vector3(amountToMove.x, amountToMove.y, 0f);

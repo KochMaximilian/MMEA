@@ -53,14 +53,29 @@ public class RopeSystem : MonoBehaviour
 
         if (!ropeAttached)
         {
-            
+            setCrosshairPosition(aimAngle);
         }
         else
         {
-            
+            crosshairSprite.enabled = false;
         }
     }
-    
+
+    // MAX: position crosshair based on the aimAngle
+    private void setCrosshairPosition(float aimAngle)
+    {
+        // Todo MAX: enable sprite for now constantly later on the press of a button
+        if (!crosshairSprite.enabled)
+        {
+            crosshairSprite.enabled = true;
+        }
+
+        var x = transform.position.x + 1f * Mathf.Cos(aimAngle);
+        var y = transform.position.y + 1f * Mathf.Sin(aimAngle);
+        
+        var crossHairPosition = new Vector3(x,y,0f);
+        crosshair.transform.position = crossHairPosition;
+    }
     
     
 

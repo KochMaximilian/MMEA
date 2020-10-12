@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,9 +38,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GrapplingHook.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" />
       </list>
     </option>
@@ -60,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -95,7 +96,7 @@
       <workItem from="1602167664246" duration="9799000" />
       <workItem from="1602330866038" duration="3562000" />
       <workItem from="1602423441777" duration="8867000" />
-      <workItem from="1602501918955" duration="5267000" />
+      <workItem from="1602501918955" duration="10198000" />
     </task>
     <servers />
   </component>
@@ -121,9 +122,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="534" y="198" key="SettingsEditor" timestamp="1602423461176">
+    <state x="534" y="198" key="SettingsEditor" timestamp="1602512028585">
       <screen x="83" y="0" width="1883" height="1106" />
     </state>
+    <state x="534" y="198" key="SettingsEditor/83.0.1883.1106/565.-768.1044.590@83.0.1883.1106" timestamp="1602512028585" />
     <state x="534" y="198" key="SettingsEditor/83.0.1883.1106@83.0.1883.1106" timestamp="1602423461176" />
     <state x="176" y="93" width="1697" height="920" key="VCS.FileHistoryDialog" timestamp="1602167990502">
       <screen x="83" y="0" width="1883" height="1106" />

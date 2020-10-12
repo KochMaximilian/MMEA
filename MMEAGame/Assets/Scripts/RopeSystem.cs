@@ -15,15 +15,22 @@ using UnityEngine;
 
 public class RopeSystem : MonoBehaviour
 {
+    // MAX: Aiming Rope
     public GameObject ropeHingeAnchor;
     public DistanceJoint2D ropeJoint;
     public Transform crosshair;
     public SpriteRenderer crosshairSprite; 
-    public PlayerController PlayerController;
+    public PlayerController PlayerController; // MAX: Player movement
     private bool ropeAttached;
     private Vector2 playerPosition;
     private Rigidbody2D ropeHingeAnchorRb;
     private SpriteRenderer ropeHingeAnchorSprite;
+    
+    // MAX: Shooting Rope
+    public LineRenderer ropeRenderer;
+    public LayerMask ropeLayerMask;
+    private float ropeMaxCastDistance = 20f;
+    private List<Vector2> ropePosition = new List<Vector2>();
     
     // Max: Awake runs when the game starts and disables the rope joint and sets player position to current position 
     private void Awake()
@@ -34,8 +41,9 @@ public class RopeSystem : MonoBehaviour
         ropeHingeAnchorSprite = ropeHingeAnchor.GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+     private void Update()
     {
+
         // MAX_ Get position of the mouse with ScreenToWorldPoint method
         var worldMousePosition =
             Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
@@ -59,6 +67,8 @@ public class RopeSystem : MonoBehaviour
         {
             crosshairSprite.enabled = false;
         }
+        
+        HandleInput(aimDirection);
     }
 
     // MAX: position crosshair based on the aimAngle
@@ -73,8 +83,69 @@ public class RopeSystem : MonoBehaviour
         var x = transform.position.x + 1f * Mathf.Cos(aimAngle);
         var y = transform.position.y + 1f * Mathf.Sin(aimAngle);
         
-        var crossHairPosition = new Vector3(x,y,0f);
+        var crossHairPosition = new Vector3(x, y,0f);
         crosshair.transform.position = crossHairPosition;
+    }
+
+    private void HandleInput(Vector2 aimDirection)
+    {
+        if (Input.GetMouseButton(0))
+        {
+            Console.Write("Left Mouse Button hit");
+            // MAX: When a left mouse click is registered, the rope line renderer is enabled and a 2D raycast is fired out from the player position
+            if (ropeAttached) return;
+            ropeRenderer.enabled = true;
+
+            var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
+            /*
+             * MAX:
+             * If a valid raycast hit is found, ropeAttached is set to true, and
+             * a check is done on the list of rope vertex positions to make sure the
+             * point hit isn't in there already.
+             */
+            
+            if (hit.collider != null)
+            {
+                ropeAttached = true;
+                if (!ropePosition.Contains(hit.point))
+                {
+                    // MAX: jump a little to the distance the player from the ground after grappling something
+                    transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
+                    ropePosition.Add(hit.point);
+                    ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
+                    ropeJoint.enabled = true;
+                    ropeHingeAnchorSprite.enabled = true;
+
+                }
+            }
+            // MAX: If the raycast doesn't hit anything, then the rope line renderer and rope joint are disabled
+            else
+            {
+                ropeRenderer.enabled = false;
+                ropeAttached = false;
+                ropeJoint.enabled = false;
+            }
+        }
+
+        if (Input.GetMouseButton(1))
+        {
+            Console.Write("Right Mouse Button hit");
+            ResetRope();
+        }
+    }
+
+    // MAX: If the right mouse button is clicked, the ResetRope() method is called, which will disable and reset all rope/grappling hook related parameters
+    private void ResetRope()
+    {
+        ropeJoint.enabled = false;
+        ropeAttached = false;
+        PlayerController.isSwinging = false;
+        ropeRenderer.positionCount = 2;
+        ropeRenderer.SetPosition(0, transform.position);
+        ropeRenderer.SetPosition(1, transform.position);
+        ropePosition.Clear();
+        ropeHingeAnchorSprite.enabled = false;
+
     }
     
     

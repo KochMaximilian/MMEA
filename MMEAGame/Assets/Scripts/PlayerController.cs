@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D playerRigidbody;
     private bool isOnGround;
     private bool canDoubleJump;
+    public bool isSwinging;
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;

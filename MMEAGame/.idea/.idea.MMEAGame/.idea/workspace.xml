@@ -40,6 +40,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GrapplingHook.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Lose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" />
       </list>
     </option>
@@ -97,6 +98,8 @@
       <workItem from="1602423441777" duration="8867000" />
       <workItem from="1602501918955" duration="13655000" />
       <workItem from="1602523713585" duration="400000" />
+      <workItem from="1602528895361" duration="951000" />
+      <workItem from="1602611004122" duration="1950000" />
     </task>
     <servers />
   </component>
@@ -132,5 +135,9 @@
     </state>
     <state x="176" y="93" width="1697" height="920" key="VCS.FileHistoryDialog/83.0.1883.1106/565.-768.1044.590@83.0.1883.1106" timestamp="1602524112904" />
     <state x="176" y="93" width="1697" height="920" key="VCS.FileHistoryDialog/83.0.1883.1106@83.0.1883.1106" timestamp="1602167990502" />
+    <state x="682" y="257" key="run.anything.popup" timestamp="1602529055074">
+      <screen x="83" y="0" width="1883" height="1106" />
+    </state>
+    <state x="682" y="257" key="run.anything.popup/83.0.1883.1106@83.0.1883.1106" timestamp="1602529055074" />
   </component>
 </project>

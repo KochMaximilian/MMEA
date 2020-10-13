@@ -23,6 +23,7 @@ public class RopeSystem : MonoBehaviour
     private float ropeMaxCastDistance = 20f;
     private List<Vector2> ropePositions = new List<Vector2>();
     private bool distanceSet;
+    private  Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
     
     // Max: Awake runs when the game starts and disables the rope joint and sets player position to current position 
     private void Awake()
@@ -58,6 +59,31 @@ public class RopeSystem : MonoBehaviour
         else
         {
             crosshairSprite.enabled = false;
+
+            if (ropePositions.Count > 0)
+            {
+                var lastRopePoint = ropePositions.Last();
+                var playerToCurrentNextHit = Physics2D.Raycast(playerPosition,
+                    (lastRopePoint - playerPosition).normalized, Vector2.Distance(playerPosition, lastRopePoint) - 0.1f,
+                    ropeLayerMask);
+                if (playerToCurrentNextHit)
+                {
+                    var colliderWithVertices = playerToCurrentNextHit.collider as PolygonCollider2D;
+                    if (colliderWithVertices != null)
+                    {
+                        var clossestPointHit =
+                            GetClosestColliderPointFromRaycastHit(playerToCurrentNextHit, colliderWithVertices);
+                        if (wrapPointsLookup.ContainsKey(clossestPointHit))
+                        {
+                            ResetRope();
+                            return;
+                        }
+                        ropePositions.Add(clossestPointHit);
+                        wrapPointsLookup.Add(clossestPointHit, 0);
+                        distanceSet = false;
+                    }
+                }
+            }
         }
         
         HandleInput(aimDirection);
@@ -187,6 +213,19 @@ public class RopeSystem : MonoBehaviour
         }
     }
 
+    private Vector2 GetClosestColliderPointFromRaycastHit(RaycastHit2D hit, PolygonCollider2D polygonCollider)
+    {
+        //MAX: This converts the polygon collider's collection of points, into a dictionary of Vector2 position (LINQ)
+        var distanceDictionary = polygonCollider.points.ToDictionary<Vector2, float, Vector2>(
+                position => Vector2.Distance(hit.point, polygonCollider.transform.TransformPoint(position)),
+                position => polygonCollider.transform.TransformPoint(position)
+                );
+        var orderDictionary = distanceDictionary.OrderBy(e => e.Key);
+        return orderDictionary.Any() ? orderDictionary.First().Value : Vector2.zero;
+
+    }
+    
+    
     // MAX: If the right mouse button is clicked, the ResetRope() method is called, which will disable and reset all rope/grappling hook related parameters
     private void ResetRope()
     {
@@ -198,6 +237,7 @@ public class RopeSystem : MonoBehaviour
         ropeRenderer.SetPosition(1, transform.position);
         ropePositions.Clear();
         ropeHingeAnchorSprite.enabled = false;
+        wrapPointsLookup.Clear();
     }
     
     // Start is called before the first frame update

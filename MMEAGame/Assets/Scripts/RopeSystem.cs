@@ -7,6 +7,7 @@ using System.Linq;
 public class RopeSystem : MonoBehaviour
 {
     // MAX: Aiming Rope
+    [SerializeField] private float climbSpeed = 3f; // MAX: Speed of going up and down the rope
     public GameObject ropeHingeAnchor;
     public DistanceJoint2D ropeJoint;
     public Transform crosshair;
@@ -24,6 +25,8 @@ public class RopeSystem : MonoBehaviour
     private List<Vector2> ropePositions = new List<Vector2>();
     private bool distanceSet;
     private  Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
+    private bool isColliding;
+
     
     // Max: Awake runs when the game starts and disables the rope joint and sets player position to current position 
     private void Awake()
@@ -38,8 +41,7 @@ public class RopeSystem : MonoBehaviour
     {
 
         // MAX_ Get position of the mouse with ScreenToWorldPoint method
-        var worldMousePosition =
-            Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
+        var worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
         var facingDirection = worldMousePosition - transform.position; // MAX: calculate facing direction by subtracting player position from the mouse position in the world
         var aimAngle = Mathf.Atan2(facingDirection.y, facingDirection.x); // MAX: represents the Angel of the mouse cursor
         if (aimAngle < 0f)
@@ -55,9 +57,12 @@ public class RopeSystem : MonoBehaviour
         if (!ropeAttached)
         {
             setCrosshairPosition(aimAngle);
+            PlayerController.isSwinging = false;
         }
         else
         {
+            PlayerController.isSwinging = true;
+            PlayerController.ropeHook = ropePositions.Last();
             crosshairSprite.enabled = false;
 
             if (ropePositions.Count > 0)
@@ -88,6 +93,7 @@ public class RopeSystem : MonoBehaviour
         
         HandleInput(aimDirection);
         UpdateRopePosition();
+        HandleRopeLength();
     }
 
     // MAX: position crosshair based on the aimAngle
@@ -160,11 +166,7 @@ public class RopeSystem : MonoBehaviour
         {
             return;
         }
-        
-        // 2 
         ropeRenderer.positionCount = ropePositions.Count + 1;
-        
-        // 3 
 
         for (var i = ropeRenderer.positionCount -1; i >= 0; i--)
         {
@@ -172,7 +174,6 @@ public class RopeSystem : MonoBehaviour
             {
                 ropeRenderer.SetPosition(i, ropePositions[i]);
                 
-                // 4
                 if (i == ropePositions.Count - 1 || ropePositions.Count == 1) 
                 {
                     var ropePosition = ropePositions[ropePositions.Count - 1];
@@ -207,7 +208,6 @@ public class RopeSystem : MonoBehaviour
             }
             else
             {
-                // 6
                 ropeRenderer.SetPosition(i, transform.position);
             }
         }
@@ -224,6 +224,19 @@ public class RopeSystem : MonoBehaviour
         return orderDictionary.Any() ? orderDictionary.First().Value : Vector2.zero;
 
     }
+
+    private void HandleRopeLength()
+    {
+        // 1
+        if (Input.GetAxis("Vertical") >= 1f && ropeAttached && !isColliding)
+        {
+            ropeJoint.distance -= Time.deltaTime * climbSpeed;
+        }
+        else if (Input.GetAxis("Vertical") < 0f && ropeAttached)
+        {
+            ropeJoint.distance += Time.deltaTime * climbSpeed;
+        }
+    }
     
     
     // MAX: If the right mouse button is clicked, the ResetRope() method is called, which will disable and reset all rope/grappling hook related parameters
@@ -238,6 +251,16 @@ public class RopeSystem : MonoBehaviour
         ropePositions.Clear();
         ropeHingeAnchorSprite.enabled = false;
         wrapPointsLookup.Clear();
+    }
+
+    void OnTriggerStay2D(Collider2D colliderStay)
+    {
+        isColliding = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D colliderOnExit)
+    {
+        isColliding = false;
     }
     
     // Start is called before the first frame update

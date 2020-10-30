@@ -53,7 +53,7 @@ public class PlayerHealthController : MonoBehaviour
          else
          {
             invincibleCounter = _invincibleLength;
-            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, .5f);
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, .7f);
             
             PlayerController.instance.KnockBack();
          }

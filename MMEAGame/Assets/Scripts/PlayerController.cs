@@ -160,6 +160,7 @@ public class PlayerController : MonoBehaviour
     {
         knockBackCounter = _knockBackLength;
         playerRigidbody.velocity = new Vector2(0f, _knockBackForce);
+        animator.SetTrigger("hurt");
     }
 }
 

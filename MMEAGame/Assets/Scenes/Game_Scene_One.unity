@@ -14444,6 +14444,8 @@ MonoBehaviour:
   _moveSpeed: 5
   _leftPoint: {fileID: 262378043}
   _rightPoint: {fileID: 881324046}
+  _moveTime: 2
+  _waitTime: 1.5
   enemySpriteRenderer: {fileID: 2134407652}
 --- !u!50 &1787075566
 Rigidbody2D:

@@ -14223,7 +14223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1458665392, guid: a4dee36385419d340af6f3ea0421915c, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4197081458566494350, guid: a4dee36385419d340af6f3ea0421915c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14294,7 +14294,7 @@ GameObject:
   - component: {fileID: 1504785461}
   - component: {fileID: 1504785464}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainUICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14399,6 +14399,7 @@ MonoBehaviour:
   _health3: {fileID: 592915420}
   _healthFull: {fileID: 8109154662235370213, guid: d9a616f95048ea84e8fc6f7920f846b8, type: 3}
   _healthEmpty: {fileID: -4390673095631447188, guid: d9a616f95048ea84e8fc6f7920f846b8, type: 3}
+  _healthHalf: {fileID: 2139837793675082937, guid: d9a616f95048ea84e8fc6f7920f846b8, type: 3}
 --- !u!1001 &1882251473
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -180,6 +180,8 @@ MonoBehaviour:
   _groundLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  _knockBackLength: 0.35
+  _knockBackForce: 7.5
   ropeHook: {x: 0, y: 0}
   swingForce: 6
   playerRigidbody: {fileID: 4197081457594894109}
@@ -369,6 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 6
+  _invincibleLength: 1
 --- !u!1 &4197081458218067717
 GameObject:
   m_ObjectHideFlags: 0

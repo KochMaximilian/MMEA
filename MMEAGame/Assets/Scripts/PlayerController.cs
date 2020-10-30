@@ -6,12 +6,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+    
     // Serialized Fields
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _doupleJumpForce;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayerMask;
+    [SerializeField] private float _knockBackLength, _knockBackForce;
+
     public Vector2 ropeHook;
     public float swingForce = 4f;
 
@@ -24,8 +28,12 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-   
-    
+    private float knockBackCounter;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
 
     // Start is called before the first frame update
@@ -38,8 +46,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
-        PlayerAnimation();
+        if (knockBackCounter <= 0)
+        {
+            PlayerMovement();
+            PlayerAnimation();
+        }
+        else
+        {
+            knockBackCounter -= Time.deltaTime;
+            if (!spriteRenderer.flipX) // Max: Player faces to the right
+            {
+               playerRigidbody.velocity = new Vector2(-_knockBackForce, playerRigidbody.velocity.y); 
+            }
+            else
+            {
+                playerRigidbody.velocity = new Vector2(_knockBackForce, playerRigidbody.velocity.y); 
+            }
+        }
     }
 
     
@@ -131,6 +154,12 @@ public class PlayerController : MonoBehaviour
                 }    
             }
         }
+    }
+
+    public void KnockBack()
+    {
+        knockBackCounter = _knockBackLength;
+        playerRigidbody.velocity = new Vector2(0f, _knockBackForce);
     }
 }
 

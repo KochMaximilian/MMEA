@@ -14221,9 +14221,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1458665392, guid: a4dee36385419d340af6f3ea0421915c, type: 3}
-      propertyPath: _invincibleLength
-      value: 1
+    - target: {fileID: 4197081457594894107, guid: a4dee36385419d340af6f3ea0421915c, type: 3}
+      propertyPath: _knockBackForce
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4197081458566494350, guid: a4dee36385419d340af6f3ea0421915c, type: 3}
       propertyPath: m_LocalPosition.x

@@ -18,6 +18,7 @@
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerHealthController.cs" t="Include" />
           <e p="RopeSystem.cs" t="Include" />
+          <e p="UIController.cs" t="Include" />
         </e>
       </e>
       <e p="MMEAGame.sln" t="IncludeFlat" />

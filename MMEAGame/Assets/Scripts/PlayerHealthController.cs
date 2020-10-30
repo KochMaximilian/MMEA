@@ -7,7 +7,7 @@ public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController instance;
 
-    [SerializeField] private int _currentHealth, _maxHealth;
+    public int currentHealth, maxHealth;
 
 
     private void Awake()
@@ -18,7 +18,7 @@ public class PlayerHealthController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _currentHealth = _maxHealth;
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -29,11 +29,14 @@ public class PlayerHealthController : MonoBehaviour
 
     public void DealDamage()
     {
-        _currentHealth--;
+        currentHealth--;
 
-        if (_currentHealth <= 0)
+        if (currentHealth <= 0)
         {
+            currentHealth = 0;
             gameObject.SetActive(false); // Max: Player disappears 
         }
+        
+        UIController.instance.UpdateHealthDisplay();
     }
 }

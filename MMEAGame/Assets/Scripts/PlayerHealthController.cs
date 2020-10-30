@@ -10,6 +10,7 @@ public class PlayerHealthController : MonoBehaviour
     public int currentHealth, maxHealth;
 
     [SerializeField] private float _invincibleLength;
+    [SerializeField] private GameObject deathEffect;
     private float invincibleCounter;
     private SpriteRenderer spriteRenderer;
 
@@ -50,6 +51,7 @@ public class PlayerHealthController : MonoBehaviour
          {
             currentHealth = 0;
             //  gameObject.SetActive(false); // Max: Player disappears 
+            Instantiate(deathEffect, transform.position, transform.rotation);
             LevelManager.instance.RespawnPlayer();
          }
          else
@@ -61,5 +63,17 @@ public class PlayerHealthController : MonoBehaviour
          }
          UIController.instance.UpdateHealthDisplay();
         } 
+    }
+
+    public void HealPlayer()
+    {
+        // Max: full heal
+        // currentHealth = maxHealth; 
+        currentHealth++;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        UIController.instance.UpdateHealthDisplay();
     }
 }

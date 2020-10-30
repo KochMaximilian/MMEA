@@ -358,6 +358,7 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 6
   _invincibleLength: 1
+  deathEffect: {fileID: 2396811656289327674, guid: 8e424475b4a3f3e4ca065bfd9e0f672c, type: 3}
 --- !u!1 &4197081458218067717
 GameObject:
   m_ObjectHideFlags: 0

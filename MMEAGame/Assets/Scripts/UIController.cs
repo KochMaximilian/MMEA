@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.Examples;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
     public static UIController instance;
-    
+
     [SerializeField] private Image _health1, _health2, _health3; // Max: UI uses Image Components instead of sprites
     [SerializeField] private Sprite _healthFull, _healthEmpty, _healthHalf;
+    public TextMeshProUGUI gemText;
     private void Awake()
     {
         instance = this;
@@ -18,7 +21,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateGemCount();
     }
 
     // Update is called once per frame
@@ -79,5 +82,10 @@ public class UIController : MonoBehaviour
                 _health3.sprite = _healthEmpty;
                 break;
         }
+    }
+
+    public void UpdateGemCount()
+    {
+        gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 }

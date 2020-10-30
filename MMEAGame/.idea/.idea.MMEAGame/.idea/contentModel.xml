@@ -13,6 +13,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CameraController.cs" t="Include" />
+          <e p="DamagePlayer.cs" t="Include" />
           <e p="Lose.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerHealthController.cs" t="Include" />

@@ -6,8 +6,11 @@ using UnityEngine;
 public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController instance;
-
     public int currentHealth, maxHealth;
+
+    [SerializeField] private float _invincibleLength;
+    private float invincibleCounter;
+    private SpriteRenderer spriteRenderer;
 
 
     private void Awake()
@@ -19,24 +22,41 @@ public class PlayerHealthController : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (invincibleCounter > 0)
+        {
+            invincibleCounter -= Time.deltaTime; // Max: amount of time it takes to get from one frame to the next
+
+            if (invincibleCounter <= 0)
+            {
+                spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);
+            }
+        }
     }
 
     public void DealDamage()
     {
-        currentHealth--;
-
-        if (currentHealth <= 0)
+        if (invincibleCounter <= 0)
         {
+            currentHealth--;
+
+         if (currentHealth <= 0)
+         {
             currentHealth = 0;
             gameObject.SetActive(false); // Max: Player disappears 
-        }
-        
-        UIController.instance.UpdateHealthDisplay();
+         }
+         else
+         {
+            invincibleCounter = _invincibleLength;
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, .5f);
+            
+         }
+         UIController.instance.UpdateHealthDisplay();
+        } 
     }
 }

@@ -11,7 +11,7 @@ public class Lose : MonoBehaviour
     {
         if (transform.position.y <= loseHeight)
         {
-            SceneManager.LoadScene("Testing"); // Prototype Scene
+            SceneManager.LoadScene("Game_Scene_One"); // Prototype Scene
         }
     }
 }

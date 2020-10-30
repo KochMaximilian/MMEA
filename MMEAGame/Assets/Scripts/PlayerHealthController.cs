@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class PlayerHealthController : MonoBehaviour
@@ -48,7 +49,8 @@ public class PlayerHealthController : MonoBehaviour
          if (currentHealth <= 0)
          {
             currentHealth = 0;
-            gameObject.SetActive(false); // Max: Player disappears 
+            //  gameObject.SetActive(false); // Max: Player disappears 
+            LevelManager.instance.RespawnPlayer();
          }
          else
          {

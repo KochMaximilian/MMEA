@@ -15,7 +15,7 @@ public class Stompbox : MonoBehaviour
     void Start()
     {
         
-    }g
+    }
 
     // Update is called once per frame
     void Update()

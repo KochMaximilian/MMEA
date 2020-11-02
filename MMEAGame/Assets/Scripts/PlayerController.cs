@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     public Vector2 ropeHook;
     public float swingForce = 4f;
+    public float bounceForce;
 
 
     // Basic Variables
@@ -161,6 +162,11 @@ public class PlayerController : MonoBehaviour
         knockBackCounter = _knockBackLength;
         playerRigidbody.velocity = new Vector2(0f, _knockBackForce);
         animator.SetTrigger("hurt");
+    }
+
+    public void Bounce()
+    {
+        playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, bounceForce);
     }
 }
 

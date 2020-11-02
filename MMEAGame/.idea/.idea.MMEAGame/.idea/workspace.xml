@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Frog_Jump.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Frog_Jump.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/EnemyFrog.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/EnemyFrog.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Level Art/Tileset/SunnyLand Tiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Level Art/Tileset/SunnyLand Tiles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Enemies/Frog_Jump.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Frog_Jump.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerObject.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Scene_One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Scene_One.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemieController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemieController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +50,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Lose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DamagePlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CheckpointController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/KillPlayer.cs" />
@@ -56,6 +59,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Pickup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemieController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +121,8 @@
       <workItem from="1602611004122" duration="3014000" />
       <workItem from="1602696746979" duration="4421000" />
       <workItem from="1603370789087" duration="54000" />
-      <workItem from="1604055057144" duration="27973000" />
+      <workItem from="1604055057144" duration="28119000" />
+      <workItem from="1604318499125" duration="3074000" />
     </task>
     <servers />
   </component>

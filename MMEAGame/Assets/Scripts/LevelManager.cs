@@ -30,14 +30,19 @@ public class LevelManager : MonoBehaviour
     public void RespawnPlayer()
     {
         StartCoroutine(RespawnCoroutine());
-       
+
     }
 
     private IEnumerator RespawnCoroutine()
     {
         PlayerController.instance.gameObject.SetActive(false);
         AudioManager.instance.PlaySFX(8);
-        yield return new WaitForSeconds(waitToRespawn); // Max: wait for respawn time and run the following code after
+        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed)); // Max: wait for respawn time and run the following code after
+        UIController.instance.FadeToBlack();
+        
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
+        UIController.instance.FadeFromBlack();
+        
         PlayerController.instance.gameObject.SetActive(true);
         PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;

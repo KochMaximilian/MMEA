@@ -23,6 +23,7 @@
           <e p="LevelManager.cs" t="Include" />
           <e p="Lose.cs" t="Include" />
           <e p="MainMenue.cs" t="Include" />
+          <e p="PauseMenue.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PlayerHealthController.cs" t="Include" />

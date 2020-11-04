@@ -46,21 +46,24 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (knockBackCounter <= 0)
+        if (!PauseMenue.instance.isPaused)
         {
-            PlayerMovement();
-            PlayerAnimation();
-        }
-        else
-        {
-            knockBackCounter -= Time.deltaTime;
-            if (!spriteRenderer.flipX) // Max: Player faces to the right
+            if (knockBackCounter <= 0)
             {
-               playerRigidbody.velocity = new Vector2(-_knockBackForce, playerRigidbody.velocity.y); 
+                PlayerMovement();
+                PlayerAnimation();
             }
             else
             {
-                playerRigidbody.velocity = new Vector2(_knockBackForce, playerRigidbody.velocity.y); 
+                knockBackCounter -= Time.deltaTime;
+                if (!spriteRenderer.flipX) // Max: Player faces to the right
+                {
+                   playerRigidbody.velocity = new Vector2(-_knockBackForce, playerRigidbody.velocity.y); 
+                }
+                else
+                {
+                    playerRigidbody.velocity = new Vector2(_knockBackForce, playerRigidbody.velocity.y); 
+                }
             }
         }
     }

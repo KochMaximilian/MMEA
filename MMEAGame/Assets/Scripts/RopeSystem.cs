@@ -39,6 +39,9 @@ public class RopeSystem : MonoBehaviour
 
      private void Update()
     {
+        if (!PauseMenue.instance.isPaused)
+        {
+        
 
         // MAX_ Get position of the mouse with ScreenToWorldPoint method
         var worldMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0f));
@@ -94,6 +97,7 @@ public class RopeSystem : MonoBehaviour
         HandleInput(aimDirection);
         UpdateRopePosition();
         HandleRopeLength();
+        }
     }
 
     // MAX: position crosshair based on the aimAngle

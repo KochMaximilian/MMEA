@@ -20,11 +20,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Boss Battle.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Boss Battle.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Game Complete.ogg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Game Complete.ogg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Level Select.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Level Select.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Level Victory.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Level Victory.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Main Level.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Main Level.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Title Screen.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Music/Title Screen.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Hit.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Hit.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Impact.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Impact.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Shot.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Boss Shot.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Enemy Explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Enemy Explode.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Level Selected.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Level Selected.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Map Movement.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Map Movement.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Pickup Gem.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Pickup Gem.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Pickup Health.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Pickup Health.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Death.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Death.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Hurt.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Hurt.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Jump.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Player Jump.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Warp Jingle.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Sound Effects/Warp Jingle.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Background.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Background.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CameraObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/CameraObject.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Boss Battle.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Boss Battle.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Game Complete.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Game Complete.ogg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Level Select.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Level Select.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Level Victory.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Level Victory.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Main Level.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Main Level.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Title Screen.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Music/Title Screen.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Hit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Hit.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Impact.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Impact.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Shot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Boss Shot.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Enemy Explode.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Enemy Explode.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Level Selected.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Level Selected.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Map Movement.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Map Movement.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Pickup Gem.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Pickup Gem.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Pickup Health.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Pickup Health.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Death.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Death.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Hurt.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Hurt.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Jump.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Player Jump.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Warp Jingle.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Audio/Sound Effects/Warp Jingle.wav.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game_Scene_One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game_Scene_One.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +134,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemieController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stompbox.cs" />
       </list>
     </option>
@@ -117,7 +197,8 @@
       <workItem from="1602696746979" duration="4421000" />
       <workItem from="1603370789087" duration="54000" />
       <workItem from="1604055057144" duration="28119000" />
-      <workItem from="1604318499125" duration="5720000" />
+      <workItem from="1604318499125" duration="5912000" />
+      <workItem from="1604498358076" duration="606000" />
     </task>
     <servers />
   </component>

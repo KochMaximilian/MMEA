@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
     public AudioSource[] soundEffects;
+    public AudioSource bgm, levelEndMusic;git 
+    
 
     private void Awake()
     {

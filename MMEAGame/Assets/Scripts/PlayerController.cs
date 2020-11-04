@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
             if (isOnGround)
             {
                 playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, _jumpForce);
+                AudioManager.instance.PlaySFX(10);
             }
             else
             {
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour
                 {
                     playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, _doupleJumpForce);
                     canDoubleJump = false;
+                    AudioManager.instance.PlaySFX(10);
                 }
             }
         }
@@ -167,6 +169,8 @@ public class PlayerController : MonoBehaviour
     public void Bounce()
     {
         playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, bounceForce);
+        
+        AudioManager.instance.PlaySFX(10);
     }
 }
 

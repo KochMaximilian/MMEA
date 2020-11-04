@@ -60,6 +60,7 @@ public class PlayerHealthController : MonoBehaviour
             spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, .7f);
             
             PlayerController.instance.KnockBack();
+            AudioManager.instance.PlaySFX(9);
          }
          UIController.instance.UpdateHealthDisplay();
         } 

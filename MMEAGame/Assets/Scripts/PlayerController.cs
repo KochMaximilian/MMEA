@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 ropeHook;
     public float swingForce = 4f;
     public float bounceForce;
+    public bool stopInput;
 
 
     // Basic Variables
@@ -46,7 +47,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!PauseMenue.instance.isPaused)
+        if (!PauseMenue.instance.isPaused && !stopInput)
         {
             if (knockBackCounter <= 0)
             {

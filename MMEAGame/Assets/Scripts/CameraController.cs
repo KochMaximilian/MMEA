@@ -5,10 +5,18 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+    public static CameraController instance;
+    
     [SerializeField] private float _parallaxOffset = .5f;
     public Transform backgroundFar, backgroundMiddle;
     private Vector2 lastPosition;
-    
+    public bool stopFollow;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +26,10 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ParallaxScroll();
+        if (!stopFollow)
+        {
+            ParallaxScroll();
+        }
     }
     
     private void ParallaxScroll()

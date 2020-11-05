@@ -20,6 +20,7 @@
           <e p="DestroyOverTime.cs" t="Include" />
           <e p="EnemieController.cs" t="Include" />
           <e p="KillPlayer.cs" t="Include" />
+          <e p="LevelExit.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="Lose.cs" t="Include" />
           <e p="MainMenue.cs" t="Include" />

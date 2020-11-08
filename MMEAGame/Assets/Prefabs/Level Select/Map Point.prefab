@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6536740701797973068}
   - component: {fileID: 1479086398}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Map Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,3 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88086a3837742d943ae16f95f6cddba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  up: {fileID: 0}
+  right: {fileID: 0}
+  left: {fileID: 0}
+  down: {fileID: 0}
+  isLevel: 1

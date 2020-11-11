@@ -24,9 +24,11 @@
           <e p="LevelManager.cs" t="Include" />
           <e p="Lose.cs" t="Include" />
           <e p="LSCameraController.cs" t="Include" />
+          <e p="LSManager.cs" t="Include" />
           <e p="LSPlayer.cs" t="Include" />
           <e p="MainMenue.cs" t="Include" />
           <e p="MapPoint.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="PauseMenue.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />

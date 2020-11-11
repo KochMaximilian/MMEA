@@ -2,13 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapPoint : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
-
-    public MapPoint up, right, left, down;
-    public bool isLevel;
-    public string levelToLoad;
-    
     // Start is called before the first frame update
     void Start()
     {

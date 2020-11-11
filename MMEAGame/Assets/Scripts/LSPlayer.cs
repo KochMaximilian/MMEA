@@ -8,6 +8,7 @@ public class LSPlayer : MonoBehaviour
 
     public MapPoint currentPoint;
     public float moveSpeed = 10f;
+    private bool LevelLoading;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class LSPlayer : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, currentPoint.transform.position, moveSpeed * Time.deltaTime);
-        if (Vector3.Distance(transform.position, currentPoint.transform.position) < .1f)
+        if (Vector3.Distance(transform.position, currentPoint.transform.position) < .1f && !LevelLoading)
         {
             MovePlayerMap();
         }
@@ -61,6 +62,14 @@ public class LSPlayer : MonoBehaviour
             if (currentPoint.down != null)
             {
                 SetNextPoint(currentPoint.down);
+            }
+        }
+
+        if (currentPoint.isLevel)
+        {
+            if (Input.GetButtonDown("Jump"))
+            {
+                LevelLoading = true;
             }
         }
     }

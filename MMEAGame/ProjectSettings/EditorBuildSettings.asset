@@ -12,6 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Titlescreen.unity
     guid: 5ff77761f1d3e9249a211b82539b5dbc
   - enabled: 1
+    path: Assets/Scenes/Level_Select.unity
+    guid: 3aa9ff608e97d0341a1975e506c6a258
+  - enabled: 1
     path: Assets/Scenes/Levels/Game_Scene_One.unity
     guid: 5d0eb4984218a7d469fd29e61fce9bf0
+  - enabled: 1
+    path: Assets/Scenes/Levels/Game_Scene_Two.unity
+    guid: 7f79742a15481f349aec79a8c789610c
+  - enabled: 1
+    path: Assets/Scenes/Levels/Game_Scene_Three.unity
+    guid: 5a8f0969492b46d4ea9d5c0eccd11ae0
   m_configObjects: {}

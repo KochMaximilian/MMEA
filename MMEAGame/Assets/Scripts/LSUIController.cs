@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,10 @@ public class LSUIController : MonoBehaviour
     public Image fadeScreen;
     public float fadeSpeed;
     private bool shouldFadeToBlack, shouldFadeFromBlack;
+
+    public GameObject levelInfoPanel;
+    public TextMeshProUGUI levelName;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +59,16 @@ public class LSUIController : MonoBehaviour
     {
         shouldFadeFromBlack = true;
         shouldFadeToBlack = false;
+    }
+
+    public void ShowInfo(MapPoint levelInfo)
+    {
+        levelName.text = levelInfo.levelName;
+      levelInfoPanel.SetActive(true);  
+    }
+
+    public void HideInfo()
+    {
+        levelInfoPanel.SetActive(false);
     }
 }

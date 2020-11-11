@@ -2443,7 +2443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 225407895286547713, guid: bfaddddb7dd0ef94186da0a365aaa4eb, type: 3}
       propertyPath: levelToLoad
-      value: Titlescreen
+      value: Level_Select
       objectReference: {fileID: 0}
     - target: {fileID: 225407895286547714, guid: bfaddddb7dd0ef94186da0a365aaa4eb, type: 3}
       propertyPath: m_Name

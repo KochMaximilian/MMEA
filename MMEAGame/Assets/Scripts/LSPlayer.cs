@@ -18,8 +18,10 @@ public class LSPlayer : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, currentPoint.transform.position, moveSpeed * Time.deltaTime);
-        MovePlayerMap();
-      
+        if (Vector3.Distance(transform.position, currentPoint.transform.position) < .1f)
+        {
+            MovePlayerMap();
+        }
     }
 
     public void SetNextPoint(MapPoint nextPoint)

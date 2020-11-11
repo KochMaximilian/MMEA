@@ -26,6 +26,7 @@
           <e p="LSCameraController.cs" t="Include" />
           <e p="LSManager.cs" t="Include" />
           <e p="LSPlayer.cs" t="Include" />
+          <e p="LSUIController.cs" t="Include" />
           <e p="MainMenue.cs" t="Include" />
           <e p="MapPoint.cs" t="Include" />
           <e p="NewBehaviourScript.cs" t="Include" />

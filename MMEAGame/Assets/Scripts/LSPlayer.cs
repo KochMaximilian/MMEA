@@ -9,6 +9,8 @@ public class LSPlayer : MonoBehaviour
     public MapPoint currentPoint;
     public float moveSpeed = 10f;
     private bool LevelLoading;
+    public LSManager theManager;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,7 @@ public class LSPlayer : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 LevelLoading = true;
+                theManager.loadLevel();
             }
         }
     }

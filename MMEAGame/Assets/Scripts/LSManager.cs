@@ -18,9 +18,15 @@ public class LSManager : MonoBehaviour
         
     }
 
-    public IEnumerator LoadLevel()
+    public void loadLevel()
     {
-        yield return new WaitForSeconds(1f);
+        StartCoroutine(LoadLevelCo());
+    }
+
+    public IEnumerator LoadLevelCo()
+    {
+        LSUIController.instance.FadeToBlack();
+        yield return new WaitForSeconds((1f / LSUIController.instance.fadeSpeed) + .25f);
         SceneManager.LoadScene(thePlayer.currentPoint.levelToLoad);
     }
 }

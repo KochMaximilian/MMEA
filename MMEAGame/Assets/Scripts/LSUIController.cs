@@ -19,7 +19,7 @@ public class LSUIController : MonoBehaviour
     private bool shouldFadeToBlack, shouldFadeFromBlack;
 
     public GameObject levelInfoPanel;
-    public TextMeshProUGUI levelName;
+    public TextMeshProUGUI levelName, gemsFound, gemsTarget, bestTime, timeTarget;
     
     // Start is called before the first frame update
     void Start()
@@ -62,9 +62,20 @@ public class LSUIController : MonoBehaviour
     }
 
     public void ShowInfo(MapPoint levelInfo)
-    {
+    { 
         levelName.text = levelInfo.levelName;
-      levelInfoPanel.SetActive(true);  
+        levelInfoPanel.SetActive(true);
+        gemsFound.text = "Found: " + levelInfo.gemsCollected;
+        gemsTarget.text = "In Level: " + levelInfo.gemsTotal;
+        timeTarget.text = "Target: " + levelInfo.targetTime + "s";
+        if (levelInfo.bestTime == 0)
+        {
+            bestTime.text = "Best: ---";
+        }
+        else
+        {                                                        // F1: float number with one decimal after comma
+            bestTime.text = "Best: " + levelInfo.bestTime.ToString("F1") + "s";
+        }
     }
 
     public void HideInfo()

@@ -9,6 +9,8 @@ public class MapPoint : MonoBehaviour
     public bool isLevel;
     public string levelToLoad, levelToCheck, levelName;
     public bool isLocked;
+    public int gemsCollected, gemsTotal;
+    public float bestTime, targetTime;
     
     // Start is called before the first frame update
     void Start()

@@ -29,6 +29,7 @@
           <e p="LSUIController.cs" t="Include" />
           <e p="MainMenue.cs" t="Include" />
           <e p="MapPoint.cs" t="Include" />
+          <e p="MovingPlatform.cs" t="Include" />
           <e p="NewBehaviourScript.cs" t="Include" />
           <e p="PauseMenue.cs" t="Include" />
           <e p="Pickup.cs" t="Include" />

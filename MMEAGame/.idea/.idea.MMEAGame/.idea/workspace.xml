@@ -20,21 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio Manager.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio Manager.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Select/Map Point.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Select/Map Point.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelPack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelPack.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Mechanics/UIObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Mechanics/UIObject.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_Select.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_Select.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Titlescreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Titlescreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LSManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LSManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LSPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LSPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseMenue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseMenue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Main Mechanics/PlayerObject.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Main Mechanics/PlayerObject.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSUIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSPlayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -69,7 +62,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealthController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelExit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LSCameraController.cs" />
@@ -81,6 +73,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       </list>
     </option>
   </component>
@@ -155,7 +149,7 @@
       <workItem from="1604579270813" duration="3911000" />
       <workItem from="1604846555214" duration="5094000" />
       <workItem from="1605101148218" duration="7756000" />
-      <workItem from="1605198270409" duration="6865000" />
+      <workItem from="1605198270409" duration="9101000" />
     </task>
     <servers />
   </component>

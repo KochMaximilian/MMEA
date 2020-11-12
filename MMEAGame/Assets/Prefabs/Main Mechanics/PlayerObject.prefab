@@ -252,12 +252,13 @@ MonoBehaviour:
   _groundCheck: {fileID: 4197081456756208935}
   _groundLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4352
   _knockBackLength: 0.35
   _knockBackForce: 7.5
   ropeHook: {x: 0, y: 0}
   swingForce: 6
   bounceForce: 20.5
+  stopInput: 0
   playerRigidbody: {fileID: 4197081457594894109}
   isSwinging: 0
 --- !u!95 &4197081457594894106

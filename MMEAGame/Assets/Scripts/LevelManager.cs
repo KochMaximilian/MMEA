@@ -59,13 +59,16 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator EndLevelCoroutine()
     {
+        AudioManager.instance.PlayLevelVictory();
         PlayerController.instance.stopInput = true;
         CameraController.instance.stopFollow = true;
         UIController.instance.levelCompleteText.SetActive(true);
         yield return new WaitForSeconds(1.5f);
         UIController.instance.FadeToBlack();
-        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .25f);
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .35f);
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_unlocked" , 1);
+        //Todo Max 12.11.2020 
+        PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
         if (PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_gems"))
         {
             if (gemsCollected > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_gems"))

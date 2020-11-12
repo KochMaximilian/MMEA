@@ -222,3 +222,5 @@ MonoBehaviour:
   gemsTotal: 0
   bestTime: 0
   targetTime: 0
+  gemBadge: {fileID: 564885035}
+  timeBadge: {fileID: 2047611468}

@@ -30,7 +30,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6093682855198574344}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -109,7 +109,7 @@ RectTransform:
   - {fileID: 4506434574135618913}
   - {fileID: 4506434573852024921}
   m_Father: {fileID: 6093682855198574344}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -976,8 +976,8 @@ RectTransform:
   - {fileID: 6093682854009100519}
   - {fileID: 3118813698607955960}
   - {fileID: 658497281}
-  - {fileID: 312983507}
   - {fileID: 30389032}
+  - {fileID: 312983507}
   m_Father: {fileID: 6093682855450188574}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1083,6 +1083,7 @@ MonoBehaviour:
   gemText: {fileID: 3565029308567739160}
   fadeScreen: {fileID: 30389033}
   fadeSpeed: 0.5
+  levelCompleteText: {fileID: 0}
 --- !u!1 &6093682855450188573
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,13 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class MainMenue : MonoBehaviour
 {
-    public string startScene;
+    public string startScene, continueScene;
+    public GameObject continueButton;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (PlayerPrefs.HasKey(startScene + "_unlocked"))
+        {
+            continueButton.SetActive(true);
+        }
+        else
+        {
+            continueButton.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -22,7 +30,14 @@ public class MainMenue : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(startScene);
+        
+    }
+
+    public void ContinueGame()
+    {
+        SceneManager.LoadScene(continueScene);
     }
 
     public void QuitGame()

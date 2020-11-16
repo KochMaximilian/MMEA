@@ -44,6 +44,7 @@
           <e p="RopeSystem.cs" t="Include" />
           <e p="Stompbox.cs" t="Include" />
           <e p="UIController.cs" t="Include" />
+          <e p="Victory.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

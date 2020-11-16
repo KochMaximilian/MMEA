@@ -13878,7 +13878,15 @@ PrefabInstance:
       objectReference: {fileID: 644380182}
     - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: levelName
-      value: Boss Battle
+      value: The Challanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: levelToCheck
+      value: Game_Scene_Three
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: levelToLoad
+      value: Boss_Battle
       objectReference: {fileID: 0}
     - target: {fileID: 6536740701797973068, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: m_LocalPosition.x

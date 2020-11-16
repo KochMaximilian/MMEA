@@ -487,6 +487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelPack
       objectReference: {fileID: 0}
+    - target: {fileID: 8050248102575651203, guid: da2342ef6ca6881419e87d6ea9fe879d, type: 3}
+      propertyPath: levelToLoad
+      value: Victory_Screen
+      objectReference: {fileID: 0}
     - target: {fileID: 8050248102861076997, guid: da2342ef6ca6881419e87d6ea9fe879d, type: 3}
       propertyPath: bossMusic
       value: 

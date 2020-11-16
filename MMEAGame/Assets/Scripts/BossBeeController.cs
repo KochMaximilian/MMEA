@@ -31,6 +31,7 @@ public class BossBeeController : MonoBehaviour
     [Header("Boss Hurt")]
     public float hurtTime;
     private float hurtCounter;
+    public GameObject hitbox;
    
 
     // Start is called before the first frame update
@@ -45,6 +46,15 @@ public class BossBeeController : MonoBehaviour
         switch (currentState)
         {
             case bossStates.shooting:
+                anim.SetTrigger("IsShooting");
+                shotCounter -= Time.deltaTime;
+                if (shotCounter <= 0)
+                {
+                    shotCounter = timeBetweenShots;
+                    var newBullet = Instantiate(bullet, firePoint.position, firePoint.rotation);
+                    newBullet.transform.localScale = theBoss.localScale;
+
+                }
                 break;
             
             case bossStates.hurt:
@@ -102,6 +112,7 @@ public class BossBeeController : MonoBehaviour
         currentState = bossStates.shooting;
         shotCounter = timeBetweenShots;
         anim.SetTrigger("StopMoving");
+        hitbox.SetActive(true);
     }
 
 }

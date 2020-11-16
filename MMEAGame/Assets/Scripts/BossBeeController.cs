@@ -66,9 +66,7 @@ public class BossBeeController : MonoBehaviour
                    {
                        theBoss.localScale = new Vector3(1f,1f,1f);
                        moveRight = false;
-                       currentState = bossStates.shooting;
-                       shotCounter = timeBetweenShots;
-                       anim.SetTrigger("StopMoving");
+                       EndMovement();
                    }
                 }
                 else
@@ -78,9 +76,7 @@ public class BossBeeController : MonoBehaviour
                     {
                         theBoss.localScale = new Vector3(-1f,1f,1f);
                         moveRight = true;
-                        currentState = bossStates.shooting;
-                        shotCounter = timeBetweenShots;
-                        anim.SetTrigger("StopMoving");
+                        EndMovement();
                     }
                 }
                 break;
@@ -100,4 +96,12 @@ public class BossBeeController : MonoBehaviour
         hurtCounter = hurtTime;
         anim.SetTrigger("Hit");
     }
+
+    private void EndMovement()
+    {
+        currentState = bossStates.shooting;
+        shotCounter = timeBetweenShots;
+        anim.SetTrigger("StopMoving");
+    }
+
 }

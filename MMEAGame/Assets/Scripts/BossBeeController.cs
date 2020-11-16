@@ -31,7 +31,8 @@ public class BossBeeController : MonoBehaviour
     [Header("Boss Hurt")]
     public float hurtTime;
     private float hurtCounter;
-    
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,10 +46,58 @@ public class BossBeeController : MonoBehaviour
         {
             case bossStates.shooting:
                 break;
+            
             case bossStates.hurt:
+                if (hurtCounter > 0)
+                {
+                    hurtCounter -= Time.deltaTime;
+                    if (hurtCounter <= 0)
+                    {
+                        currentState = bossStates.moving;
+                    }
+                }
                 break;
+            
             case bossStates.moving:
+                if (moveRight)
+                {
+                   theBoss.position += new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
+                   if (theBoss.position.x > rightPoint.position.x)
+                   {
+                       theBoss.localScale = new Vector3(1f,1f,1f);
+                       moveRight = false;
+                       currentState = bossStates.shooting;
+                       shotCounter = timeBetweenShots;
+                       anim.SetTrigger("StopMoving");
+                   }
+                }
+                else
+                {
+                    theBoss.position -= new Vector3(moveSpeed * Time.deltaTime, 0f, 0f);
+                    if (theBoss.position.x < leftPoint.position.x)
+                    {
+                        theBoss.localScale = new Vector3(-1f,1f,1f);
+                        moveRight = true;
+                        currentState = bossStates.shooting;
+                        shotCounter = timeBetweenShots;
+                        anim.SetTrigger("StopMoving");
+                    }
+                }
                 break;
         }
+#if UNITY_EDITOR
+        // Todo Max: Debug function delete later
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            TakeHit();
+        }
+#endif
+    }
+
+    public void TakeHit()
+    {
+        currentState = bossStates.hurt;
+        hurtCounter = hurtTime;
+        anim.SetTrigger("Hit");
     }
 }

@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Boss/bee_spritesheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Boss/bee_spritesheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_hit.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_hit.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_move.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_move.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_shoot.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_shoot.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +149,7 @@
       <workItem from="1605101148218" duration="7756000" />
       <workItem from="1605198270409" duration="10016000" />
       <workItem from="1605262832052" duration="3604000" />
-      <workItem from="1605551937716" duration="720000" />
+      <workItem from="1605551937716" duration="1834000" />
     </task>
     <servers />
   </component>

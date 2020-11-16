@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/Bullet Boss.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/Bullet Boss.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBeeHitbox.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBullet.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/Boss Mine.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Boss/Boss Mine.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossMine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" afterDir="false" />
     </list>
@@ -50,6 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossMine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSPlayer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -84,6 +82,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BossBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BossBeeHitbox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BossMine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" />
       </list>
     </option>
@@ -161,7 +160,7 @@
       <workItem from="1605101148218" duration="7756000" />
       <workItem from="1605198270409" duration="10016000" />
       <workItem from="1605262832052" duration="3604000" />
-      <workItem from="1605551937716" duration="6394000" />
+      <workItem from="1605551937716" duration="9206000" />
     </task>
     <servers />
   </component>

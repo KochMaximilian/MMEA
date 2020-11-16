@@ -21,6 +21,10 @@ public class BossBeeController : MonoBehaviour
     public float moveSpeed;
     public Transform leftPoint, rightPoint;
     private bool moveRight;
+    public GameObject mine;
+    public Transform minePoint;
+    public float tomeBeteenMines;
+    private float mineCounter;
     
     [Header("Shooting")]
     public GameObject bullet;
@@ -64,6 +68,7 @@ public class BossBeeController : MonoBehaviour
                     if (hurtCounter <= 0)
                     {
                         currentState = bossStates.moving;
+                        mineCounter = 0;
                     }
                 }
                 break;
@@ -89,6 +94,13 @@ public class BossBeeController : MonoBehaviour
                         EndMovement();
                     }
                 }
+
+                mineCounter -= Time.deltaTime;
+                if (mineCounter <= 0)
+                {
+                    mineCounter = tomeBeteenMines;
+                    Instantiate(mine, minePoint.position, minePoint.rotation);
+                }
                 break;
         }
 #if UNITY_EDITOR
@@ -105,12 +117,21 @@ public class BossBeeController : MonoBehaviour
         currentState = bossStates.hurt;
         hurtCounter = hurtTime;
         anim.SetTrigger("Hit");
+
+        BossMine[] mines = FindObjectsOfType<BossMine>();
+        if (mines.Length > 0)
+        {
+            foreach (BossMine foundMine in mines)
+            {
+                foundMine.Explode();
+            }
+        }
     }
 
     private void EndMovement()
     {
         currentState = bossStates.shooting;
-        shotCounter = timeBetweenShots;
+        shotCounter = 0f;
         anim.SetTrigger("StopMoving");
         hitbox.SetActive(true);
     }

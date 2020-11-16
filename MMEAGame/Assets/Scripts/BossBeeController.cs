@@ -10,7 +10,8 @@ public class BossBeeController : MonoBehaviour
     {
         shooting,
         hurt,
-        moving
+        moving,
+        ended
     };
     public bossStates currentState;
     
@@ -23,7 +24,7 @@ public class BossBeeController : MonoBehaviour
     private bool moveRight;
     public GameObject mine;
     public Transform minePoint;
-    public float tomeBeteenMines;
+    public float timeBeteenMines;
     private float mineCounter;
     
     [Header("Shooting")]
@@ -36,7 +37,14 @@ public class BossBeeController : MonoBehaviour
     public float hurtTime;
     private float hurtCounter;
     public GameObject hitbox;
-   
+
+    [Header("Health")] 
+    public int health = 5;
+    public GameObject explosion, winPlatfrom;
+    private bool isDefeated;
+    public float ShotSpeedUp, mineSpeedUp;
+    
+    
 
     // Start is called before the first frame update
     void Start()
@@ -67,8 +75,17 @@ public class BossBeeController : MonoBehaviour
                     hurtCounter -= Time.deltaTime;
                     if (hurtCounter <= 0)
                     {
+                        
                         currentState = bossStates.moving;
                         mineCounter = 0;
+                        if (isDefeated)
+                        {
+                            theBoss.gameObject.SetActive(false);
+                            Instantiate(explosion, theBoss.position, theBoss.rotation);
+                            winPlatfrom.SetActive(true);
+                            AudioManager.instance.StopBossMusic();
+                            currentState = bossStates.ended;
+                        }
                     }
                 }
                 break;
@@ -98,7 +115,7 @@ public class BossBeeController : MonoBehaviour
                 mineCounter -= Time.deltaTime;
                 if (mineCounter <= 0)
                 {
-                    mineCounter = tomeBeteenMines;
+                    mineCounter = timeBeteenMines;
                     Instantiate(mine, minePoint.position, minePoint.rotation);
                 }
                 break;
@@ -117,6 +134,7 @@ public class BossBeeController : MonoBehaviour
         currentState = bossStates.hurt;
         hurtCounter = hurtTime;
         anim.SetTrigger("Hit");
+        AudioManager.instance.PlaySFX(0);
 
         BossMine[] mines = FindObjectsOfType<BossMine>();
         if (mines.Length > 0)
@@ -125,6 +143,17 @@ public class BossBeeController : MonoBehaviour
             {
                 foundMine.Explode();
             }
+        }
+
+        health--;
+        if (health <= 0)
+        {
+            isDefeated = true;
+        }
+        else
+        {
+            timeBetweenShots /= ShotSpeedUp;
+            timeBeteenMines /= mineSpeedUp;
         }
     }
 

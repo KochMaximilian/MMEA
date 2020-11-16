@@ -13,6 +13,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
+          <e p="BossBeeController.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="Checkpoint.cs" t="Include" />
           <e p="CheckpointController.cs" t="Include" />

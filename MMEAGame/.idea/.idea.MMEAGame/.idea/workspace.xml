@@ -20,19 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Eagle_Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/Eagle_Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/EnemyEagle.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/Enemies/EnemyEagle.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Utility/MovingPlatform.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Utility/MovingPlatform.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Utility/OneWayPlatform.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Utility/OneWayPlatform.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Boss/bee_spritesheet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Boss/bee_spritesheet.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_boss.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_hit.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_hit.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_idle.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_idle.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_move.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_move.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_shoot.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/Boss/bee_shoot.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseMenue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LSUIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RopeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenue.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +87,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MovingPlatform.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FlyingEnemyController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BossBeeController.cs" />
       </list>
     </option>
   </component>
@@ -157,7 +163,8 @@
       <workItem from="1604846555214" duration="5094000" />
       <workItem from="1605101148218" duration="7756000" />
       <workItem from="1605198270409" duration="10016000" />
-      <workItem from="1605262832052" duration="2837000" />
+      <workItem from="1605262832052" duration="3604000" />
+      <workItem from="1605551937716" duration="720000" />
     </task>
     <servers />
   </component>

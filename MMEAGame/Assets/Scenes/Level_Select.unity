@@ -760,6 +760,10 @@ PrefabInstance:
       propertyPath: levelName
       value: NAN
       objectReference: {fileID: 0}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: gemsTotal
+      value: 86
+      objectReference: {fileID: 0}
     - target: {fileID: 6536740701797973068, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.47
@@ -13200,6 +13204,10 @@ PrefabInstance:
       propertyPath: levelName
       value: Level Two NAN
       objectReference: {fileID: 0}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: gemsTotal
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 6536740701797973068, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.48
@@ -13888,6 +13896,10 @@ PrefabInstance:
       propertyPath: levelToLoad
       value: Boss_Battle
       objectReference: {fileID: 0}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: gemsTotal
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 6536740701797973068, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.44
@@ -14377,6 +14389,10 @@ PrefabInstance:
       propertyPath: down
       value: 
       objectReference: {fileID: 2126204199}
+    - target: {fileID: 1479086398, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
+      propertyPath: gemsTotal
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 6536740701797973068, guid: c38336d5fcc2402438aaf1ee11a8ef59, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.475

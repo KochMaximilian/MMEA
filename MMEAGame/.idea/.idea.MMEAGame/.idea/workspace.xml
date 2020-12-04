@@ -20,7 +20,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb44b931-72fa-48e3-ac27-893cad79515f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Overworld Level Tiles.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Palettes/Overworld Level Tiles.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Autumn/Background parts/bg3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Overworld_tiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Overworld_tiles.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI_Panel_Splat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/UI_Panel_Splat.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Tiles/Overworld_tiles_9.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MMEAGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Collectibles/cherry.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Collectibles/cherry.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Collectibles/gem.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Collectibles/gem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Hook/crossair_white.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Hook/crossair_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Hook/rope-tiled.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Hook/rope-tiled.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Level Mechanics/Flagpole.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Level Mechanics/Flagpole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-hurt.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-hurt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-jump.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-jump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-run.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/Player/player-run.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/UI/UI_Panel.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2D Platformer Assets/Graphics/UI/UI_Panel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_Select.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_Select.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Boss_Battle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_One.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_Three.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levels/Game_Scene_Three.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +206,11 @@
       <workItem from="1605198270409" duration="10016000" />
       <workItem from="1605262832052" duration="3604000" />
       <workItem from="1605551937716" duration="13829000" />
+      <workItem from="1605883748593" duration="37000" />
+      <workItem from="1606224904885" duration="1000" />
+      <workItem from="1606224984498" duration="264000" />
+      <workItem from="1606304711671" duration="175000" />
+      <workItem from="1606411037118" duration="185000" />
     </task>
     <servers />
   </component>
